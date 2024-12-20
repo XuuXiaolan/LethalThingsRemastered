@@ -1,0 +1,17 @@
+# Ignore everything in the project
+LethalThingsUnityProject/*
+LethalThingsUnityProject/Assets/*
+LethalThingsUnityProject/Assets/LethalCompany/*
+
+# Except the Assets/LethalCompany/Mods/plugins directories
+!LethalThingsUnityProject/Assets/
+!LethalThingsUnityProject/Assets/Editor/
+!LethalThingsUnityProject/Assets/LethalCompany/
+!LethalThingsUnityProject/Assets/LethalCompany/Mods/
+!LethalThingsUnityProject/Assets/LethalCompany/Mods/plugins/**
+LethalThingsUnityProject/Assets/LethalCompany/Mods/plugins/LethalThingsRemastered/main.unity.meta
+
+# Gitignore csproj.user so people use template instead.
+Plugin/LethalThingsRemastered.csproj.user.template
+Plugin/dlls/Assembly-CSharp.dll
+Plugin/LethalThingsRemastered/LethalThingsRemastered.csproj.user
