@@ -1,7 +1,4 @@
-﻿﻿using System;
-using System.Collections.Generic;
-using LethalLib.Extras;
-using LethalLib.Modules;
+﻿﻿using System.Collections.Generic;
 using LethalThingsRemastered.src.Util;
 using LethalThingsRemastered.src.Util.AssetLoading;
 using UnityEngine;

@@ -135,7 +135,6 @@ public class ItemHandler : ContentHandler<ItemHandler>
         if (Plugin.ModConfig.ConfigGnarpyPlushieEnabled.Value) RegisterGnarpyPlushie();
         if (Plugin.ModConfig.ConfigRocketLauncherEnabled.Value) RegisterRocketLauncher();
         if (Plugin.ModConfig.ConfigFlaregunEnabled.Value) RegisterFlaregun();
-        if (Plugin.ModConfig.ConfigToyHammerShopEnabled.Value) RegisterToyHammerShop();
         if (Plugin.ModConfig.ConfigRemoteRadarEnabled.Value) RegisterRemoteRadar();
         if (Plugin.ModConfig.ConfigPouchyBeltEnabled.Value) RegisterPouchyBelt();
         if (Plugin.ModConfig.ConfigHackingToolEnabled.Value) RegisterHackingTool();
@@ -213,7 +212,7 @@ public class ItemHandler : ContentHandler<ItemHandler>
     {
         ToyHammer = new ToyHammerAssets("toyhammerassets");
         int[] scrapValues = ChangeItemValues(Plugin.ModConfig.ConfigToyHammerWorth.Value);
-        RegisterShopItemWithConfig(Plugin.ModConfig.ConfigToyHammerScrapEnabled.Value, ToyHammer.ToyHammerDef, null, Plugin.ModConfig.ConfigToyHammerCost.Value, Plugin.ModConfig.ConfigToyHammerSpawnWeight.Value, scrapValues[0], scrapValues[1]);
+        RegisterScrapWithConfig(Plugin.ModConfig.ConfigToyHammerSpawnWeight.Value, ToyHammer.ToyHammerDef, scrapValues[0], scrapValues[1]);
     }
 
     private void RegisterRocketLauncher()

@@ -2,6 +2,7 @@ using LethalLib.Extras;
 using static LethalLib.Modules.Unlockables;
 using LethalThingsRemastered.src.Util;
 using LethalThingsRemastered.src.Util.AssetLoading;
+using LethalLib.Modules;
 
 namespace LethalThingsRemastered.src.Content.Unlockables;
 public class UnlockableHandler : ContentHandler<UnlockableHandler>
