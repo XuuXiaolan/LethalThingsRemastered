@@ -37,8 +37,8 @@ public class LethalThingsRemasteredConfig
     public ConfigEntry<bool> ConfigFatalitiesSignEnabled { get; private set; }
     public ConfigEntry<bool> ConfigDartboardEnabled { get; private set; }
     public ConfigEntry<bool> ConfigDeliveryRoverEnabled { get; private set; }
-
     #endregion
+
     #region Spawn Weights
     public ConfigEntry<string> ConfigBoombaSpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigMaggieSpawnWeight { get; private set; }
@@ -61,6 +61,7 @@ public class LethalThingsRemasteredConfig
     public ConfigEntry<string> ConfigHackingToolSpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigPingerSpawnWeight { get; private set; }
     #endregion
+
     #region Misc
     public ConfigEntry<int> ConfigBoombaPowerLevel { get; private set; }
     public ConfigEntry<int> ConfigBoombaMaxSpawnCount { get; private set; }
@@ -79,8 +80,9 @@ public class LethalThingsRemasteredConfig
     public ConfigEntry<int> ConfigFatalitiesSignCost { get; private set; }
     public ConfigEntry<int> ConfigDartboardCost { get; private set; }
     public ConfigEntry<int> ConfigDeliveryRoverCost { get; private set; }
-
+    public ConfigEntry<int> ConfigEvilMaxwellChance { get; private set; }
     #endregion 
+
     #region Value
     public ConfigEntry<string> ConfigArsonPlushieWorth { get; private set; }
     public ConfigEntry<string> ConfigCookieFumoWorth { get; private set; }
@@ -98,8 +100,8 @@ public class LethalThingsRemasteredConfig
     public ConfigEntry<string> ConfigPouchyBeltWorth { get; private set; }
     public ConfigEntry<string> ConfigHackingToolWorth { get; private set; }
     public ConfigEntry<string> ConfigPingerWorth { get; private set; }
-
     #endregion
+
     #region Debug
     public ConfigEntry<bool> ConfigDebugMode { get; private set; }
     public ConfigEntry<bool> ConfigEnableExtendedLogging { get; private set; }
@@ -245,6 +247,10 @@ public class LethalThingsRemasteredConfig
                                             "Maxwell | Enabled",
                                             true,
                                             "Whether Maxwell is enabled.");
+        ConfigEvilMaxwellChance = configFile.Bind("Maxwell",
+                                            "Maxwell | Evil Chance",
+                                            10,
+                                            "The chance of Maxwell being evil (0-100).");
         ConfigMaxwellSpawnWeight = configFile.Bind("Maxwell",
                                             "Maxwell | Spawn Weight",
                                             "Vanilla:10,Custom:10",
@@ -467,6 +473,7 @@ public class LethalThingsRemasteredConfig
                                             "-1,-1",
                                             "The min,max value of the Pinger (multiplied by 0.4), leave at a default of -1 to not affect the value.");
         #endregion
+
         #region Small Rug
         ConfigSmallRugEnabled = configFile.Bind("Small Rug",
                                             "Small Rug | Enabled",
