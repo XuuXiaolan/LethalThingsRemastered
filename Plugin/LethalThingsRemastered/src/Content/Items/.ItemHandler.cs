@@ -146,9 +146,6 @@ public class ItemHandler : ContentHandler<ItemHandler>
         ArsonPlushie = new ArsonPlushieAssets("arsonplushieassets");
         int[] scrapValues1 = ChangeItemValues(Plugin.ModConfig.ConfigArsonPlushieWorth.Value);
         RegisterScrapWithConfig(Plugin.ModConfig.ConfigArsonPlushieSpawnWeight.Value, ArsonPlushie.ArsonPlushieDef, scrapValues1[0], scrapValues1[1]);
-        
-        int[] scrapValues2 = ChangeItemValues(Plugin.ModConfig.ConfigArsonPlushieDirtyWorth.Value);
-        RegisterScrapWithConfig(Plugin.ModConfig.ConfigArsonPlushieDirtySpawnWeight.Value, ArsonPlushie.ArsonPlushieDirtyDef, scrapValues2[0], scrapValues2[1]);
     }
 
     private void RegisterCookieFumo()

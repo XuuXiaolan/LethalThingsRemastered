@@ -45,6 +45,7 @@ public class Plugin : BaseUnityPlugin
         DeleteFileButtonPatch.Init();
         MenuManagerPatch.Init();
         PlayerControllerBPatch.Init();
+        ShowerTriggerPatch.Init();
         StartOfRoundPatch.Init();
         // This should be ran before Network Prefabs are registered.
         

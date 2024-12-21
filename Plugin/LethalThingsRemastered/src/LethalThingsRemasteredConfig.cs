@@ -45,7 +45,6 @@ public class LethalThingsRemasteredConfig
     public ConfigEntry<string> ConfigCrystalRaySpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigTeleporterTrapCurveSpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigArsonPlushieSpawnWeight { get; private set; }
-    public ConfigEntry<string> ConfigArsonPlushieDirtySpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigCookieFumoSpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigToimariPlushieSpawnWeight { get; private set; }
     public ConfigEntry<string> ConfigHamisPlushieSpawnWeight { get; private set; }
@@ -84,7 +83,6 @@ public class LethalThingsRemasteredConfig
     #endregion 
     #region Value
     public ConfigEntry<string> ConfigArsonPlushieWorth { get; private set; }
-    public ConfigEntry<string> ConfigArsonPlushieDirtyWorth { get; private set; }
     public ConfigEntry<string> ConfigCookieFumoWorth { get; private set; }
     public ConfigEntry<string> ConfigToimariPlushieWorth { get; private set; }
     public ConfigEntry<string> ConfigHamisPlushieWorth { get; private set; }
@@ -195,14 +193,6 @@ public class LethalThingsRemasteredConfig
                                             "Arson Plushie | Worth",
                                             "-1,-1",
                                             "The min,max value of the Arson Plushie (multiplied by 0.4), leave at a default of -1 to not affect the value.");
-        ConfigArsonPlushieDirtySpawnWeight = configFile.Bind("Arson Plushie",
-                                            "Arson Plushie | Dirty Spawn Weight",
-                                            "Vanilla:10,Custom:10",
-                                            "The MoonName:spawnweight for dirty Arson Plushies.");
-        ConfigArsonPlushieDirtyWorth = configFile.Bind("Arson Plushie",
-                                            "Arson Plushie | Dirty Worth",
-                                            "-1,-1",
-                                            "The min,max value of the Arson Plushie (multiplied by 0.4) when the player is on fire, leave at a default of -1 to not affect the value.");
         #endregion
 
         #region Cookie Fumo
