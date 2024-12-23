@@ -1,10 +1,8 @@
 using System;
-using HarmonyLib;
 using LethalThingsRemastered.src.Util;
 using UnityEngine;
 
 namespace LethalThingsRemastered.src.Patches;
-[HarmonyPatch(typeof(MenuManager))]
 static class MenuManagerPatch
 {
     public static bool alreadyPatched = false;
